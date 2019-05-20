@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Rubik', Arial, sans-serif;
+  color: #1F252E;
+}
+h1 {
+  font-size: 58px;
+  line-height: 74px;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 38px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 34px;
+  line-height: 41px;
+}
+h4 {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 31px;
+}
+a {
+  text-decoration: none;
+  color: #1F252E;
+  cursor: pointer;
+}
+a:hover {
+  opacity: 0.7;
+}
+a.emphasis {
+  color: #1B67CB;
+}
+button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #2B7BE3;
+  color: white;
+}
+button:hover {
+  background-color: white;
+  color: #2B7BE3;
+  border: 1px solid #f2f2f2;
+  transition: 0.1s;
+}
+button.accent {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #E97979;
+  color: white;
+}
+button.accent:hover {
+  background-color: white;
+  color: #E97979;
+  border: 1px solid #f2f2f2;
+  transition: 0.1s;
+}
+section {
+  padding: 0 40px;
+  margin: 110px 0 75px 0;
+  width: 100%;
+}
+section h2 {
+  margin-bottom: 50px;
+}
+section .view-more {
+  color: #E14C4C;
+  font-weight: 300;
+  text-align: right;
+  font-size: 22px;
+  display: block;
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+.hero {
+  width: 100%;
+  padding: 110px;
+}
+.cta {
+  text-align: center;
+}
+.cta button {
+  margin-top: 28px;
+}
+.btn-common {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+nav {
+  height: 120px;
+  width: 1024px;
+  margin: 0 auto;
+  background-color: white;
+  vertical-align: text-bottom;
+  padding: 28px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+nav .brandmark {
+  font-family: 'Merriweather', serif;
+  font-size: 36px;
+  flex-grow: 2;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 40%;
+}
+header.hero {
+  background-image: url('/img/hero.png');
+  height: 680px;
+}
+section.how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 620px;
+  width: 640px;
+}
+section.how-it-works h2 {
+  margin-bottom: 0;
+}
+section.how-it-works .explain-steps h3 {
+  margin-bottom: 4px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 920px;
+}
+.cards .card {
+  border-radius: 5px;
+}
+.cards .card .title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 8px 10px;
+  border-bottom: 0.5px solid #94A3B8;
+}
+.cards .card img {
+  width: 100%;
+  height: 100%;
+}
+.cards .experience-card {
+  width: 280px;
+  border: 0.5px solid #94A3B8;
+  margin-bottom: 24px;
+}
+.cards .experience-card .card-img {
+  width: 100%;
+  height: 180px;
+}
+.cards .experience-card .description {
+  margin: 12px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+.cards .experience-card button {
+  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #1B67CB;
+  color: #2B7BE3;
+  background-color: transparent;
+  float: right;
+  margin: 16px 8px 8px 0;
+}
+.cards .experience-card button:hover {
+  background-color: #2B7BE3;
+  color: white;
+  border: 1px solid #1d6ed8;
+  transition: 0.1s;
+}
