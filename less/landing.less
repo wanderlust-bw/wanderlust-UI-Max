@@ -1,8 +1,5 @@
 header.hero {
   background-image: url('/img/hero.png');
-  .hero-text {
-    max-width: auto;
-  }
 }
 
 .hero.guide {
@@ -16,6 +13,17 @@ header.hero {
   background-size: cover;
   margin-bottom: 0px;
   padding-bottom: 275px;
+  @media @tablet {
+    .hero-text {
+      max-width: 440px;
+    }
+    h2 {
+      display: none;
+    }
+    h5 {
+      margin: 10px 0;
+    }
+  }
 }
 
 section.how-it-works {
@@ -28,6 +36,10 @@ section.how-it-works {
     margin-bottom: 0;
   }
 
+  @media @phone {
+    display: none;
+  }
+
   .explain-steps {
     height: 620px;
     width: 544px;
@@ -35,6 +47,17 @@ section.how-it-works {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media @tablet {
+    .explain-steps {
+      height: 320px;
+      width: 100%;
+    }
+    img {
+      display: none;
+    }
+  }
+
   .explain-step {
     h3 {
       margin-bottom: 4px;

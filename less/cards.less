@@ -4,6 +4,15 @@
   flex-wrap: wrap;
   max-height: 920px;
 
+  @media @tablet {
+    // max-height: none;
+    max-width: 880px;
+    margin: 0 auto;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-around;
+  }
+
   .card {
     border-radius: 5px;
     cursor: pointer;
@@ -20,6 +29,29 @@
     margin-bottom: 24px;
     transition: background-color 0.15s ease;
 
+    &:nth-child(n+6) {
+      @media @tablet {
+        display: none;
+      }
+    }
+    
+    &:nth-child(n+3) {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    @media @tablet {
+      min-width: 220px;
+      max-width: 300px;
+      width: 45%;
+    }
+
+    @media @phone {
+      width: 100%;
+      max-width: 320px;
+    }
+
     &:hover {
       background-color: @primary-100;
       transition: background-color 0.1s ease;
@@ -35,7 +67,6 @@
       font-weight: 500;
       line-height: 27px;
       padding: 8px 10px;
-      border-bottom: 0.5px solid @grey-400;
     }
 
     .description {
@@ -53,16 +84,59 @@
     }
   }
 
+  .experience-card.no-image {
+    .title {
+      border-bottom: 0.5px solid @grey-400;
+    }
+
+    @media @tablet {
+      display: none;
+    }
+  }
+
   &.category {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media @tablet {
+      justify-content: space-around;
+      align-content: stretch;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
   }
 
   .category-card {
     width: 296px;
     height: 344px;
     position: relative;
+
+    @media @tablet {
+      min-width: 220px;
+      max-width: 300px;
+      height: 240px;
+      width: 45%;
+      margin: 2%;
+    }
+
+    @media @phone {
+      width: 100%;
+      max-width: 320px;
+      height: 344px;
+
+    }
+    &:nth-child(n+2) {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    &:nth-child(n+3) {
+      @media @tablet {
+        display: none;
+      }
+    }
 
     &:hover {
       img {

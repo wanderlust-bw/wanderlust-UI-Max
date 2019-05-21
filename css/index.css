@@ -139,29 +139,60 @@ body {
 }
 h1 {
   font-size: 3.625rem;
-  line-height: 74px;
+  line-height: 1.275;
   margin: 16px 0;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.275;
+  }
 }
 h2 {
   font-size: 2.375rem;
   font-weight: 500;
+  line-height: 2.375;
   margin: 8px 0;
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
 h3 {
   font-size: 2.125rem;
   font-weight: 300;
-  line-height: 41px;
+  line-height: 2.6rem;
   margin: 8px 0;
+}
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
 }
 h4 {
   font-size: 1.625rem;
   font-weight: 300;
-  line-height: 31px;
+  line-height: 2rem;
+}
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
 }
 h5 {
   font-size: 1.4375rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
+}
+@media (max-width: 1024px) {
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
 }
 a {
   text-decoration: none;
@@ -175,7 +206,7 @@ a.emphasis {
   color: #1B67CB;
 }
 button {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 5px;
@@ -191,7 +222,7 @@ button:hover {
   transition: 0.1s;
 }
 button.accent {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 5px;
@@ -211,8 +242,24 @@ section {
   margin: 110px 0 75px 0;
   width: 100%;
 }
+@media (max-width: 1024px) {
+  section {
+    padding: 0 15px;
+    margin: 50px 0 50px 0;
+  }
+}
+@media (max-width: 480px) {
+  section h3 {
+    padding-left: 5%;
+  }
+}
 section h2 {
   margin-bottom: 50px;
+}
+@media (max-width: 480px) {
+  section h2 {
+    text-align: center;
+  }
 }
 section .view-more {
   color: #E14C4C;
@@ -221,6 +268,13 @@ section .view-more {
   font-size: 1.375rem;
   display: block;
   margin: 16px 0;
+}
+@media (max-width: 480px) {
+  section .view-more {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
 }
 .container {
   width: 1024px;
@@ -239,6 +293,12 @@ section .view-more {
 @media (max-width: 1024px) {
   .hero {
     padding: 40px;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    text-align: center;
   }
 }
 .hero .hero-text {
@@ -257,8 +317,13 @@ section .view-more {
 .cta button {
   margin-top: 28px;
 }
+@media (max-width: 480px) {
+  .cta h3 {
+    display: none;
+  }
+}
 .btn-common {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 5px;
@@ -317,6 +382,7 @@ nav ul {
   nav ul {
     width: 100%;
     justify-content: space-around;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 480px) {
@@ -326,7 +392,6 @@ nav ul {
   }
   nav ul li {
     padding: 8px;
-    font-size: 1.2rem;
     border-top: 0.5px solid #F0F2F5;
     text-align: center;
     display: block;
@@ -338,6 +403,15 @@ nav ul {
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 920px;
+}
+@media (max-width: 1024px) {
+  .cards {
+    max-width: 880px;
+    margin: 0 auto;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-around;
+  }
 }
 .cards .card {
   border-radius: 5px;
@@ -353,6 +427,29 @@ nav ul {
   margin-bottom: 24px;
   transition: background-color 0.15s ease;
 }
+@media (max-width: 1024px) {
+  .cards .experience-card:nth-child(n+6) {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .cards .experience-card:nth-child(n+3) {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .cards .experience-card {
+    min-width: 220px;
+    max-width: 300px;
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .cards .experience-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
 .cards .experience-card:hover {
   background-color: #E8F1FC;
   transition: background-color 0.1s ease;
@@ -366,7 +463,6 @@ nav ul {
   font-weight: 500;
   line-height: 27px;
   padding: 8px 10px;
-  border-bottom: 0.5px solid #94A3B8;
 }
 .cards .experience-card .description {
   margin: 12px;
@@ -376,7 +472,7 @@ nav ul {
 }
 .cards .experience-card button {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 5px;
@@ -394,15 +490,57 @@ nav ul {
   border: 1px solid #1d6ed8;
   transition: 0.1s;
 }
+.cards .experience-card.no-image .title {
+  border-bottom: 0.5px solid #94A3B8;
+}
+@media (max-width: 1024px) {
+  .cards .experience-card.no-image {
+    display: none;
+  }
+}
 .cards.category {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .cards.category {
+    justify-content: space-around;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+}
 .cards .category-card {
   width: 296px;
   height: 344px;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .cards .category-card {
+    min-width: 220px;
+    max-width: 300px;
+    height: 240px;
+    width: 45%;
+    margin: 2%;
+  }
+}
+@media (max-width: 480px) {
+  .cards .category-card {
+    width: 100%;
+    max-width: 320px;
+    height: 344px;
+  }
+}
+@media (max-width: 480px) {
+  .cards .category-card:nth-child(n+2) {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .cards .category-card:nth-child(n+3) {
+    display: none;
+  }
 }
 .cards .category-card:hover img {
   transition: opacity 0.1s ease;
@@ -430,9 +568,6 @@ nav ul {
 header.hero {
   background-image: url('/img/hero.png');
 }
-header.hero .hero-text {
-  max-width: auto;
-}
 .hero.guide {
   background-image: url('/img/guide-bg.png');
   color: white;
@@ -444,6 +579,17 @@ header.hero .hero-text {
   margin-bottom: 0px;
   padding-bottom: 275px;
 }
+@media (max-width: 1024px) {
+  .hero.end .hero-text {
+    max-width: 440px;
+  }
+  .hero.end h2 {
+    display: none;
+  }
+  .hero.end h5 {
+    margin: 10px 0;
+  }
+}
 section.how-it-works {
   display: flex;
   flex-direction: row;
@@ -453,12 +599,26 @@ section.how-it-works {
 section.how-it-works h2 {
   margin-bottom: 0;
 }
+@media (max-width: 480px) {
+  section.how-it-works {
+    display: none;
+  }
+}
 section.how-it-works .explain-steps {
   height: 620px;
   width: 544px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  section.how-it-works .explain-steps {
+    height: 320px;
+    width: 100%;
+  }
+  section.how-it-works img {
+    display: none;
+  }
 }
 section.how-it-works .explain-step h3 {
   margin-bottom: 4px;
