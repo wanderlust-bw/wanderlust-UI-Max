@@ -1,0 +1,96 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 920px;
+
+  .card {
+    border-radius: 5px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .experience-card {
+    width: 280px;
+    border: 0.5px solid @grey-400;
+    margin-bottom: 24px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background-color: @primary-100;
+      transition: background-color 0.1s ease;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 180px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 27px;
+      padding: 8px 10px;
+      border-bottom: 0.5px solid @grey-400;
+    }
+
+    .description {
+      margin: 12px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    button {
+      font-weight: 300;
+      .btn-outline(@primary-600, @primary-500);
+      float: right;
+      margin: 16px 8px 8px 0;
+    }
+  }
+
+  &.category {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 296px;
+    height: 344px;
+    position: relative;
+
+    &:hover {
+      img {
+        transition: opacity 0.1s ease;
+        opacity: 0.7;
+      }
+    }
+
+    .card-img {
+      width: 100%;
+      height: 100%;
+      img {
+        border-radius: 5px;
+        transition: opacity 0.2s ease;
+      }
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 27px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      padding: 16px;
+      background-color: rgba(240, 242, 245, 0.75);
+    }
+
+  }
+}

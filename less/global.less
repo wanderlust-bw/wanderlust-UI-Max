@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Rubik', Arial, sans-serif;
+  color: @grey-900;
+}
+
+h1 {
+  font-size: 58px;
+  line-height: 74px;
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 8px 0
+}
+
+h3 {
+  font-size: 34px;
+  line-height: 41px;
+  margin: 8px 0
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 31px;
+}
+
+h5 {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: @grey-900;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.emphasis {
+  color: @primary-600;
+  }
+}
+
+button {
+  .btn-contained(@primary-500, white);
+
+  &.accent {
+    .btn-contained(@accent-500, white);
+  }
+}
+
+section {
+  padding: 0 40px;
+  margin: 110px 0 75px 0;
+  width: 100%;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+  
+  .view-more {
+    color: @accent-600;
+    font-weight: 300;
+    text-align: right;
+    font-size: 22px;
+    display: block;
+    margin: 16px 0;
+  }
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  padding: 110px;
+}
+
+.cta {
+  text-align: center;
+
+  button {
+    margin-top: 28px;
+  }
+}
