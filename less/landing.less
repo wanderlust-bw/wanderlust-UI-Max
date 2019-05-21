@@ -35,16 +35,22 @@ header.hero {
 
 section.how-it-works {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  height: 620px;
-  width: 640px;
+  align-items: center;
 
   h2 {
     margin-bottom: 0;
   }
 
   .explain-steps {
+    height: 620px;
+    width: 544px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .explain-step {
     h3 {
       margin-bottom: 4px;
     }
