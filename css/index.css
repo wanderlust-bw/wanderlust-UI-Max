@@ -225,6 +225,11 @@ section .view-more {
   width: 1024px;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
 .hero {
   width: 100%;
   padding: 110px;
@@ -254,16 +259,62 @@ nav {
   justify-content: space-around;
   align-items: flex-end;
 }
+@media (max-width: 1024px) {
+  nav {
+    width: 100%;
+    height: auto;
+    min-height: 110px;
+    padding: 16px;
+    flex-flow: row wrap;
+    align-content: space-between;
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    padding: 0px;
+  }
+}
 nav .brandmark {
   font-family: 'Merriweather', serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   flex-grow: 2;
+}
+@media (max-width: 1024px) {
+  nav .brandmark {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  nav .brandmark {
+    padding: 16px;
+  }
 }
 nav ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   width: 40%;
+}
+@media (max-width: 1024px) {
+  nav ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    padding: 8px;
+    font-size: 1.2rem;
+    border-top: 0.5px solid #F0F2F5;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
 }
 .cards {
   display: flex;
