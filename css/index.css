@@ -157,6 +157,11 @@ h4 {
   font-weight: 300;
   line-height: 31px;
 }
+h5 {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 28px;
+}
 a {
   text-decoration: none;
   color: #1F252E;
@@ -260,43 +265,6 @@ nav ul {
   align-items: flex-end;
   width: 40%;
 }
-.hero {
-  height: 680px;
-}
-.hero h3 {
-  font-weight: 300;
-}
-header.hero {
-  background-image: url('/img/hero.png');
-}
-.hero.guide {
-  background-image: url('/img/guide-bg.png');
-  color: white;
-}
-.hero.guide h2,
-.hero.guide h3,
-.hero.guide button {
-  margin: 8px 0;
-}
-.hero.guide .hero-text {
-  max-width: 580px;
-}
-.hero.end {
-  height: auto;
-}
-section.how-it-works {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 620px;
-  width: 640px;
-}
-section.how-it-works h2 {
-  margin-bottom: 0;
-}
-section.how-it-works .explain-steps h3 {
-  margin-bottom: 4px;
-}
 .cards {
   display: flex;
   flex-direction: column;
@@ -315,6 +283,11 @@ section.how-it-works .explain-steps h3 {
   width: 280px;
   border: 0.5px solid #94A3B8;
   margin-bottom: 24px;
+  transition: background-color 0.15s ease;
+}
+.cards .experience-card:hover {
+  background-color: #E8F1FC;
+  transition: background-color 0.1s ease;
 }
 .cards .experience-card .card-img {
   width: 100%;
@@ -385,4 +358,50 @@ section.how-it-works .explain-steps h3 {
   height: 60px;
   padding: 16px;
   background-color: rgba(240, 242, 245, 0.75);
+}
+.hero {
+  height: 680px;
+}
+.hero h3 {
+  font-weight: 300;
+}
+.hero .hero-text {
+  max-width: 580px;
+}
+.hero .hero-text h2,
+.hero .hero-text h3,
+.hero .hero-text h4,
+.hero .hero-text h5,
+.hero .hero-text button {
+  margin: 8px 0;
+}
+header.hero {
+  background-image: url('/img/hero.png');
+}
+header.hero .hero-text {
+  max-width: auto;
+}
+.hero.guide {
+  background-image: url('/img/guide-bg.png');
+  color: white;
+}
+.hero.end {
+  height: auto;
+  background-image: url('/img/end-bg.jpeg');
+  background-size: cover;
+  margin-bottom: 0px;
+  padding-bottom: 275px;
+}
+section.how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 620px;
+  width: 640px;
+}
+section.how-it-works h2 {
+  margin-bottom: 0;
+}
+section.how-it-works .explain-steps h3 {
+  margin-bottom: 4px;
 }

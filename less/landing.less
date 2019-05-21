@@ -4,26 +4,33 @@
   h3 {
     font-weight: 300;
   }
+
+  .hero-text {
+    max-width: 580px;
+    h2, h3, h4, h5, button {
+      margin: 8px 0;
+    }
+  }
 }
+
 header.hero {
   background-image: url('/img/hero.png');
+  .hero-text {
+    max-width: auto;
+  }
 }
 
 .hero.guide {
   background-image: url('/img/guide-bg.png');
   color: white;
-
-  h2, h3, button {
-    margin: 8px 0;
-  }
-
-  .hero-text {
-    max-width: 580px;
-  }
 }
 
 .hero.end {
   height: auto;
+  background-image: url('/img/end-bg.jpeg');
+  background-size: cover;
+  margin-bottom: 0px;
+  padding-bottom: 275px;
 }
 
 section.how-it-works {
